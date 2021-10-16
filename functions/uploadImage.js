@@ -1,4 +1,3 @@
-
 const cloudinary = require("cloudinary").v2;
 const dotenv = require("dotenv");
 dotenv.config();
@@ -22,7 +21,7 @@ exports.handler = async event => {
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Headers": "Content-Type",
         "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
-      };
+      },
       body: JSON.stringify(res)
     };
   }
